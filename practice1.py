@@ -17,7 +17,10 @@ class Phone:
     def get_missed_calls(self):
         print('Запрос количества пропущенных звонков')
 
-rotary_phone = Phone(dial_type_value='дисковый')
-rotary_phone.ring()
-rotary_phone.call('14-88')
-rotary_phone.get_missed_calls()
+class MobilePhone(Phone):
+    pass
+
+
+mobile_phone = MobilePhone('сенсорный')
+
+mobile_phone.ring()
